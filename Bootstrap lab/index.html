@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> pizza </title>
+  <style>
+
+    #btnHover
+    {
+      box-shadow: 0px 0px 0px 8px rgb(220, 53, 69) ,
+                  0px 0px 0px 9px rgb(220, 53, 69);
+      border-radius: 2px;
+      z-index: 1;
+    }
+    
+    
+
+    #beffNav {
+      text-align: center;
+      transform: translate(0%, -100%);
+      background-color: rgba(29, 28, 28, 0.5);
+      color: #ccc;
+
+    }
+
+    .body {
+      background-color: rgb(158, 13, 13);
+    }
+
+    .col{
+      text-decoration: none;
+      color: white;
+
+    }
+    .col:hover{
+      text-decoration: underline red;
+
+    }
+
+
+
+
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/5f40b88897cffbe8dd6a68094fe12ff71b53c1eb-731x731.jpg" alt="Logo" width="90" height="80" class="d-inline-block align-text-top">
+        </a>
+
+        <div class="collapse navbar-collapse d-flex align-items-end flex-column mb-3" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SIGN IN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CREATE AN ACOUNT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FIND A PIZZA HUT</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-end flex-column mb-2">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="fa-solid fa-phone" style="margin-bottom: 5px;"></i>
+                  CALL US-19000
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- GROUP BUTTON -->
+    <div class="btn-group " style="width: 100%; border: 2px;" role="group"
+      aria-label="Button group with nested dropdown">
+      <button type="button" class="btn btn-white " style="border: 1px solid #ccc;"> PIZZA </button>
+      <button type="button" class="btn btn-white " style="border: 1px solid #ccc;"> STARTARS </button>
+      <button type="button" class="btn btn-white " style="border: 1px solid #ccc;"> SALADS </button>
+
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-white dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false"
+          style="border: 1px solid #ccc;">
+          MORE
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-warning " style="border: 1px solid #ccc;"> DEALS </button>
+      <button type="button" class="btn btn-danger "  id="btnHover"> START YOUR ORDER
+      </button>
+    </div>
+
+    <!-- carsouels -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/HELLO.png" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    
+
+
+      <div class="row " style="margin-left: 0%; margin-right: 0%;" id="beffNav">
+
+        <a class="col" aria-current="page" href="#">ALL</a>
+        <a class="col" href="#">BEEF</a>
+        <a class="col" href="#">CHICKEN</a>
+        <a class="col" href="#">VEGETERIENS</a>
+        <a class="col" href="#">SPECIALTY</a>
+        <a class="col" href="#">ESTREME PIZZA</a>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <!-- cards -->
+  <div class="container" >
+
+    <div class="d-flex justify-content-between ">
+
+      <div class="card mb-3 " style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/4.png" class="img-fluid rounded-start" alt="...">
+            <h3 style="margin: 20px;"> EGP 167.87 </h3>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-danger">SUPER SUPREME </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+
+                <div class="d-flex justify-content-between ">
+                  <div>
+  
+                    <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                      <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pan
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+  
+  
+                  </div>
+                  <div>
+  
+                    <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                      <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Medium
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+  
+  
+                </div>
+
+
+              <br>
+
+              <div class="d-flex justify-content-between">
+
+                <div>
+                  <button type="button" class="btn btn-secondary">CUSTOMIZE</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-danger" style="width: 170px; height: 50px;" id="addToCard">ADD TO
+                    CARD</button>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/5.png" class="img-fluid rounded-start" alt="...">
+            <h3 style="margin: 20px;"> EGP 167.87 </h3>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-danger">CLASSIC SUPREME </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+
+              <div class="d-flex justify-content-between ">
+                <div>
+
+                  <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Pan
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div>
+
+                  <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Medium
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <br>
+
+              <div class="d-flex justify-content-between">
+
+                <div>
+                  <button type="button" class="btn btn-secondary">CUSTOMIZE</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-danger" style="width: 170px; height: 50px;">ADD TO CARD</button>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="d-flex justify-content-between">
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/6.png" class="img-fluid rounded-start" alt="...">
+            <h3 style="margin: 20px;"> EGP 167.87 </h3>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-danger">CHICKEN SUPREME </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+
+              <div class="d-flex justify-content-between ">
+                <div>
+
+                  <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Pan
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div>
+
+                  <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Medium
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <br>
+
+              <div class="d-flex justify-content-between">
+
+                <div>
+                  <button type="button" class="btn btn-secondary">CUSTOMIZE</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-danger" style="width: 170px; height: 50px;">ADD TO CARD</button>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/7.png" class="img-fluid rounded-start" alt="...">
+            <h3 style="margin: 20px;"> EGP 167.87 </h3>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-danger">SPICY CHICKEN SUPREME </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+
+              <div class="d-flex justify-content-between ">
+                <div>
+
+                  <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Pan
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div>
+
+                  <div class="dropdown shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Medium
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <br>
+
+              <div class="d-flex justify-content-between">
+
+                <div>
+                  <button type="button" class="btn btn-secondary">CUSTOMIZE</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-danger" style="width: 170px; height: 50px;">ADD TO CARD</button>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
